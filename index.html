@@ -1,12 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 6 - HTML SignUp Form</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto", sans-serif;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .container {
+        width: 400px;
+        padding: 20px;
+        border: 1px solid black;
+        box-shadow: 10px 10px 5px -2px rgba(0, 0, 0, 0.18);
+        -webkit-box-shadow: 10px 10px 5px -2px rgba(0, 0, 0, 0.18);
+        -moz-box-shadow: 10px 10px 5px -2px rgba(0, 0, 0, 0.18);
+      }
+
+      .container h1{
+        padding:0px 0px 6px 0px;
+        border-bottom: 2px solid black;
+
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>SignUp Form</h1>
+
+      <form action="" method="GET">
+        <div class="field">
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username" required />
+        </div>
+
+        <div class="field">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" required />
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+        </div>
+
+        <div class="field">
+          <label for="phone">Phone</label>
+          <input type="tel" name="phone" id="phone" required />
+        </div>
+
+        <div class="field">
+          <label for="dob">Date of Birth</label>
+          <input type="date" name="dob" id="dob" required />
+        </div>
+
+        <div class="field">
+          <input type="checkbox" name="tac" id="tac" required />
+          <label for="tac"
+            >I agree to the TOS, a required checkbox input fiel</label
+          >
+        </div>
+
+        <div class="field">
+          <input
+            type="submit"
+            value="Sign Up"
+            name="sumit"
+            id="submit"
+            required
+          />
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
